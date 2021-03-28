@@ -2,8 +2,11 @@ body * {
   outline: 1px solid lightgrey;
 }
 
-.main-nav.ul li {
+.main-nav {
   border: 2px solid red;
   width: 90%;
   display: inline-block;
+}
+.mail-nav.ul li {
+  display: inline;
 }
