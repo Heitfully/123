@@ -1,3 +1,9 @@
 body * {
   outline: 1px solid lightgrey;
 }
+
+.main-nav.ul li {
+  border: 2px solid red;
+  width: 90%;
+  display: inline-block;
+}
