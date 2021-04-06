@@ -24,3 +24,14 @@ footer {
 .for-columns__item {
   width: 25%;
 }
+.header {
+  padding: 40px 0 15px 0;
+  color:orange ;
+  font-size: 30px;
+  text-decoration:underline;
+  text-align: center;
+
+}
+.header.dots:after {
+  content :"...";
+}
