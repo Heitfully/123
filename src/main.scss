@@ -12,7 +12,10 @@ body * {
     width: 55px;
     height: 80px;
     text-align: center;
-    &__hover
+    &:hover {
+      top:2px;
+      left: 2px;
+    }
   }
 }
 
