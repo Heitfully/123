@@ -3,36 +3,103 @@
 
 body {
   margin: 0;
+  box-sizing: border-box;
 }
-body * {
-  outline: 1px solid lightgrey;
-}
+
 header.container {
   padding-top: 30px;
+  padding-bottom: 0;
+  
 }
-.picture-blog {
+
+.logo-space {
   display: flex;
   justify-content: flex-end;
-  &__img {
-    width: 55px;
-    margin-left: 50px;
-    text-align: center;
-    
+  &__rabbit {
+  width: 100px;
+  background-image:url(/img/images.jfif);
+  overflow:hidden;
+  background-position: 50%;
+  background-size: cover;
+  
+
+  }
+   
+
+}
+.picture-blog {
+  display: inline-block;
+  padding: 0 15px;
+  text-decoration: none;
+  margin-left: 40px;
+  margin-right: 10px;
+  &:hover {
     position: relative;
+    top:2px;
     cursor: pointer;
-    &:hover {
-      top:2px;
-      left: 2px;
-      opacity: 0.8;
-    }
+  }
+  
+  &__discription {
+    text-align: center;
   }
 }
+.banner {
+  background-image:url(/img/aple.jpg);
+  overflow:hidden;
+  background-position: 50%;
+  background-size: cover;
+  height: 250px;
+  position: relative;
+  &__rabbits {
+    width: 250px;
+    text-align:center ;
+    background-color:#4b4f4f;
+    color: orange;
+    height: 30px;
+    padding-top: 8px;
+    font-weight: bold;
+    font-size: 18px;
+    &:hover {
+      position: relative;
+      background-color:orange;
+      color:#4b4f4f;
+      cursor: pointer;
+    }
+
+    
+  }
+  &__orranges {
+    width: 250px;
+    text-align: center;
+    background-color:#fbc758;
+    color:#4b4f4f;
+    height: 30px;
+    padding-top: 8px;
+    font-weight: bold;
+    font-size: 18px;
+    &:hover {
+      position: relative;
+      background-color:#4b4f4f;
+      color:orange;
+      cursor: pointer;
+    }
+  }
+  
+
+}
+.container__orang {
+  position: absolute;
+  bottom: 50px;
+  left:160px;
+}
+
 
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 50px 0;
+  padding: 0;
+
   
 }
 
@@ -50,6 +117,7 @@ footer {
 
 .three-columns {
   display:flex;
+  margin-top: 40px;
 
 }
 .three-columns__item {
@@ -69,4 +137,41 @@ footer {
 }
 .header.dots:after {
   content :"...";
+}
+.float-clearning {
+  display:flex;
+  margin-top: 30px;
+}
+
+.namelabel {
+  
+  width: 100px;
+  height: 40px;
+  font-size: 30px;
+  color:orange;
+  
+  
+
+}
+.texts {
+  margin-left: 35px;
+  width: 100%;
+  
+  
+  
+}
+input {
+  background-color :#f8f7f6;
+  width: 100%;
+  height: 25px;
+  border:2px #f8f7f6 inset;
+  
+}
+footer {
+  height: 100px;
+  margin-top: 50px;
+  text-align: center;
+  font-size: 40px;
+  padding-top: 30px;
+  color: #f8f7f6;
 }

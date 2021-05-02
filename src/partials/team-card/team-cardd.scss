@@ -1,4 +1,7 @@
 .team-card {
+    &__texty {
+        font-size: 15px;
+    }
     &__header {
         color: black;
         font-size: 22px;
@@ -22,6 +25,7 @@
         max-height: 100%;
         
         }
+    
         
     }
 }
