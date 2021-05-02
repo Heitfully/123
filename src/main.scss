@@ -7,16 +7,15 @@ body {
 body * {
   outline: 1px solid lightgrey;
 }
-.picture-blog-img {
-  height: 80px;
-  width: 55px;
-  text-align: center;
+.picture-blog {
+  &__img {
+    width: 55px;
+    height: 80px;
+    text-align: center;
+    &__hover
+  }
 }
-.picture-blog:hover {
-  top: 2px;
-  left: 2px;
-  opacity: 1;
-}
+
 
 .container {
   max-width: 1200px;
