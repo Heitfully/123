@@ -7,14 +7,23 @@ body {
 body * {
   outline: 1px solid lightgrey;
 }
+header.container {
+  padding-top: 30px;
+}
 .picture-blog {
+  display: flex;
+  justify-content: flex-end;
   &__img {
     width: 55px;
-    height: 80px;
+    margin-left: 50px;
     text-align: center;
+    
+    position: relative;
+    cursor: pointer;
     &:hover {
       top:2px;
       left: 2px;
+      opacity: 0.8;
     }
   }
 }
