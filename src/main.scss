@@ -9,18 +9,28 @@ body {
 header.container {
   padding-top: 30px;
   padding-bottom: 0;
+  display: flex;
+  width: 100%;
+  
+}
+.picture-space {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+
   
 }
 
 .logo-space {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   &__rabbit {
   width: 100px;
   background-image:url(/img/images.jfif);
   overflow:hidden;
   background-position: 50%;
   background-size: cover;
+
   
 
   }
@@ -28,7 +38,7 @@ header.container {
 
 }
 .picture-blog {
-  display: inline-block;
+  
   padding: 0 15px;
   text-decoration: none;
   margin-left: 40px;
@@ -50,6 +60,7 @@ header.container {
   background-size: cover;
   height: 250px;
   position: relative;
+  
   &__rabbits {
     width: 250px;
     text-align:center ;
@@ -64,6 +75,7 @@ header.container {
       background-color:orange;
       color:#4b4f4f;
       cursor: pointer;
+      transition-duration: 0.8s;
     }
 
     
@@ -82,6 +94,7 @@ header.container {
       background-color:#4b4f4f;
       color:orange;
       cursor: pointer;
+      transition-duration: 0.8s;
     }
   }
   
@@ -168,4 +181,43 @@ footer {
   font-size: 40px;
   padding-top: 30px;
   color: #f8f7f6;
+}
+.submits {  
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;  
+  margin-top: 50px;
+  
+  margin-bottom: 100px;
+  
+  }
+
+.submit {
+  width: 150px;
+  height: 50px;
+  right: 100px;
+  top:10px;
+  position: relative;
+  
+  
+}
+.submit__butom {
+  width: 100%;
+  height: 100%;
+  background-color: orange;
+  color:  #f8f7f6;
+  
+  border: 2px orange inset;
+  text-align: center;
+  font-size: 22px;
+  
+  
+  &:hover {
+    cursor: pointer;
+    background-color:rgb(253, 138, 6);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+
+    
+  }
 }
