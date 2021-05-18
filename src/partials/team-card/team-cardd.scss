@@ -1,15 +1,23 @@
 .team-card {
-    &__texty {
-        font-size: 15px;
-    }
+    
     &__header {
         color: black;
         font-size: 22px;
         margin-bottom: 20px;
         text-align: center;
+               
+    }
+    &__texty {
+        font-size: 15px; 
+        text-align: justify;
+        width: 80%;
+        padding-left: 20px; 
+                   
+       
     }
     &__position {
-        color:orange
+        color:orange;
+        
     }
     &__img {
         border-radius: 50%;
@@ -17,9 +25,11 @@
         border:2px solid orange;
         padding: calc(50% - 2px);
         font-size: 0;
-        background-image: url(/img/krolik-porody-barani-04.jpg);
+        background-image: url(/img/str.jpg);
         background-position: 50%;
         background-size: cover;
+        margin-top: 20px;
+        margin-bottom: 20px;
         img {        
         max-width: 100%;
         max-height: 100%;

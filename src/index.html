@@ -17,6 +17,7 @@
           <div class="orang-rabbits">
           <p class="space-orang">orange</p>
           <p class="space-Rabbit">RABBIT</p>
+          </div>
         </div>
                
         </div>
@@ -85,13 +86,25 @@
         </header>
         <div class="three-columns">
           <div class="three-columns__item">
-            @@include('./partials/team-card/_team-cadd.html')
+            @@include('./partials/team-card/_team-cadd.html',
+            {
+              "imgPath": "/img/house.jpg",
+              "cardContent": "Hoof is our most talanted designer.  However he`s not the talkative type and l would advise not getting on the wrong side of him."
+            })
           </div>
           <div class="three-columns__item">
-            @@include('./partials/team-card/_team-cadd.html')
+            @@include('./partials/team-card/_team-cadd.html',
+            {
+              "imgPath": "/img/rabbitmain.jpg",
+              "cardContent": "Nibs is our go to woman. She’s the ceo/director of orange rabbit and runs fast when she has too."
+            })
           </div>
           <div class="three-columns__item">
-            @@include('./partials/team-card/_team-cadd.html')
+            @@include('./partials/team-card/_team-cadd.html',
+            {
+              "imgPath": "/img/str.jpg",
+              "cardContent": "Squawk is no social bunny. But when it comes to programming he stands out from the crowd. "
+            })
           </div>
         </div>
 
@@ -142,7 +155,7 @@
     </main>
     <footer>
       <div class="container">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+        COPYRIGHT ORANGE RABBIT - DESIGNED BY JAKE BHATT.
       </div>
     </footer>
 

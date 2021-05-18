@@ -4,6 +4,7 @@
 body {
   margin: 0;
   box-sizing: border-box;
+  height: 1980px;
 }
 
 header.container {
@@ -20,13 +21,20 @@ header.container {
 
   
 }
+.orang-rabbits {
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
 
 .logo-space {
   display: flex;
   justify-content: flex-start;
   &__rabbit {
   width: 100px;
-  background-image:url(/img/images.jfif);
+  background-image:url(/img/rabbit.jpg);
   overflow:hidden;
   background-position: 50%;
   background-size: cover;
@@ -38,14 +46,19 @@ header.container {
 
 }
 .space-orang {
-  font-size: 22px;
+  font-size: 25px;
   margin-top:20px;
   margin-bottom: 0;
-}
-.space-Rabbit{
   color:orange;
+  padding-bottom: 10px;
+  letter-spacing:4px;
+  font-weight:bold;
+}
+.space-Rabbit{  
   margin: 0;
   font-size: 27px;
+  font-weight:bold;
+  
 
 }
 
@@ -67,12 +80,16 @@ header.container {
   }
 }
 .banner {
-  background-image:url(/img/aple.jpg);
+  width: 1980px;
+  background-image:url(/img/bgimg.jpg);
   overflow:hidden;
+  background-repeat: no-repeat;
   background-position: 50%;
   background-size: cover;
-  height: 250px;
+  height: 420px;
   position: relative;
+  border: 2px solid orange;
+  margin: 0 auto;
   
   &__rabbits {
     width: 250px;
@@ -118,8 +135,9 @@ header.container {
 }
 .container__orang {
   position: absolute;
-  bottom: 50px;
-  left:160px;
+  margin-left: 15%;
+  bottom: 100px;
+  
 }
 
 
