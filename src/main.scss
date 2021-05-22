@@ -1,6 +1,4 @@
-body * {
-  outline: 1px solid lightgrey;
-}
+
 body {
   margin: 0;
   padding: 0;
@@ -21,9 +19,7 @@ body {
 }
 .header {
   width:100%;
-  height:100px;
-  
-  
+  height:100px;  
  
   
   &__logo {
@@ -37,6 +33,12 @@ body {
     display: flex;
     width: 100%;
     justify-content: flex-end;
+    
+    
+  }
+  &__menu {
+    color:white;
+    text-decoration: none;
   }
   ul {
     width: 150px;
@@ -51,8 +53,19 @@ body {
     color:white;
     cursor: pointer;
     
+    
   }
 }
+.header__nav :link,
+.header__nav :visited {
+  opacity: 1;
+	transition: 0.2s;
+  background-color:blue;
+  position: relative;
+  top:2px;
+  left:2px;
+}
+
 .banner {
   width:100%;
   height: 90vh; 
@@ -67,12 +80,13 @@ body {
     margin: 100px auto;
     height: 500px;
     width: 50%;
+    
 
   }
   &__title ~ p {
-    color:red;
     font-size: 25px;    
     margin: 50px auto;
+    
   }
 
 }
@@ -81,10 +95,11 @@ h1 {
   font-size: 2.5em;
   line-height: 4.0vw;
   font-weight: 400;
-  font-style: normal;
+  font-style: italic;
+  color:tomato;
 }
 .HOT {
   height: 400px;
-  background-color:blue;
+  
 }
 
