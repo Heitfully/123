@@ -1,3 +1,90 @@
 body * {
   outline: 1px solid lightgrey;
 }
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  margin: 0 auto;
+}
+
+
+.headertitile {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  background-color: white;
+  position: fixed;
+
+}
+.header {
+  width:100%;
+  height:100px;
+  
+  
+ 
+  
+  &__logo {
+    display: flex;
+    width: 150px;
+    margin-left: 40px;
+    cursor: pointer;
+    
+  }
+  &__nav {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+  }
+  ul {
+    width: 150px;
+    margin-right: 30px;
+    text-align: center;
+    padding: 0;
+    font-size: 22px;
+    padding-top: 14px;
+    border:2px solid tomato;
+    border-radius: 10px;
+    background-color: tomato;
+    color:white;
+    cursor: pointer;
+    
+  }
+}
+.banner {
+  width:100%;
+  height: 90vh; 
+  background-image:  linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/pizzahut.jpg);
+  background-position:center;
+  background-size:cover;
+  color: white; 
+  display: flex; 
+  text-align: center;
+  &__mein {
+    width: 100%;
+    margin: 100px auto;
+    height: 500px;
+    width: 50%;
+
+  }
+  &__title ~ p {
+    color:red;
+    font-size: 25px;    
+    margin: 50px auto;
+  }
+
+}
+h1 {
+  letter-spacing: 1.1em;
+  font-size: 2.5em;
+  line-height: 4.0vw;
+  font-weight: 400;
+  font-style: normal;
+}
+.HOT {
+  height: 400px;
+  background-color:blue;
+}
+
