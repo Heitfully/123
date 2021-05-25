@@ -55,16 +55,15 @@ body {
     
     
   }
+  ul:hover {
+    background-color:rgb(216, 79, 25);
+    position: relative;
+    top:1px;
+    left:1px;
+    
+  }
 }
-.header__nav :link,
-.header__nav :visited {
-  opacity: 1;
-	transition: 0.2s;
-  background-color:blue;
-  position: relative;
-  top:2px;
-  left:2px;
-}
+
 
 .banner {
   width:100%;
