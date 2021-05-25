@@ -8,7 +8,6 @@ body {
   margin: 0 auto;
 }
 
-
 .headertitile {
   display: flex;
   width: 100%;
@@ -39,8 +38,6 @@ body {
   &__menu {
     color:white;
     text-decoration: none;
-  }
-  ul {
     width: 150px;
     margin-right: 30px;
     text-align: center;
@@ -53,14 +50,20 @@ body {
     color:white;
     cursor: pointer;
     
-    
   }
-  ul:hover {
-    background-color:rgb(216, 79, 25);
-    position: relative;
-    top:1px;
-    left:1px;
-  }
+  &__menu:hover {
+    text-decoration: none;
+  background-color:rgb(216, 79, 25);
+  position: relative;
+  top:1px;
+  left:1px;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+  }  
+}
+a {
+  text-decoration: none;
+  color:white;
 }
 
 
