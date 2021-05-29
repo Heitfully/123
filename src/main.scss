@@ -133,6 +133,37 @@ h1 {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
   }
 }
+h2{
+  font-size: 4em;
+  font-style: italic;
+  text-align: center;
+}
+.sss {
+  border: none;
+  background-color: tomato;
+  height: 3px;
+  width: 30em;
+  margin: 50px auto;
+  
+}
+.splide {
+  margin: 0 auto;
+  color:black;
+  font-style: italic;
+  &__stock {
+    color:white;
+    font-size: 8em;
+    text-align: center;
+    margin-top: 0;
+  }
+  h2 {
+    font-size: 4em;
+    text-align: center;
+    margin-bottom: 10px;
+    letter-spacing:0.4em;
 
+  }
+
+}
 
 
