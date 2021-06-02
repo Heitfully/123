@@ -103,7 +103,7 @@ h1 {
   margin-top: 100px;
   justify-content: center;
   &__text  {
-    width: 400px;
+    width: 600px;
     color:white;
     margin-right:20%;
     font-size: 25px;
@@ -123,7 +123,6 @@ h1 {
   }
   &__order:hover {
     cursor: pointer;
-    letter-spacing:1.5px;
     text-decoration: none;
     background-color:rgb(216, 79, 25);
     position: relative;
