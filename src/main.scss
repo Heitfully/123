@@ -180,7 +180,7 @@ h2{
     display: flex;
     flex-direction: column;
     margin-left: 100px;
-    
+       
   }
   &__textm {
     color:tomato;
@@ -192,6 +192,12 @@ h2{
     color:black;
     text-align: center;
     
+  }
+  &__img {
+    background-color:red;
+    width: 200px;
+    height: 200px;
+    background-image: url('/img/pizzaone.jpg');
   }
   &__buttom {
     margin: 0 auto;
