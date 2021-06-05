@@ -8,9 +8,10 @@
     <script src="./js/main.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/js/splide.min.js" integrity="sha256-SmCcbf/1ehhlBnw3ZGinNu6fjQV471LDBjc4yMMJhsk=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
-    <main class="container">
+    <main class="primary-nav">
       <header class="header">
           <div class="headertitile">
            <div class="header__logo">
@@ -54,7 +55,7 @@
       </div>
          <H2 id="111">Блюдо дня</H2>
         <div class="sss"></div>
-        <div class="splide">
+        <div class="splide container">
           <div class="splide__track">
             <ul class="splide__list">         
               <li class="splide__slide">
@@ -81,14 +82,14 @@
             cover  : true,
             height : '30rem',
             autoplay: 'boolean',        
-            width: '80rem'
+            
           } ).mount();
         </script>
   
     </main>
     <H2 id="111">Меню</H2>
      <div class="sss"></div>
-    <section class="menu">
+    <section class="menu container">
             <div class="menu__menu-card">          
              @@include('./partials/menu-card/_arcticle.html',
               {
@@ -186,14 +187,14 @@
     </section>
     <H2 id="111">Отзывы</H2>
      <div class="sss"></div>
-    <section class="reviews">
+    <section class="reviews container">
       <div class="reviews__blog">
         <div class="reviews__photo"
         style="background-image: url(/img/user1.jpg);">
 
         </div>
         <div class="reviews__comment">
-          <h4> Rjkz</h4>
+          <h4> Александр:</h4>
           Спасибо за отличные новинки, очень понравилась пицца "Итальянская Классика" с Пармской ветчиной, Вы одна из немногих компаний, где за не очень дорого можно попробовать настоящие продукты- хороший сыр и дорогую ветчину.Спасибо.
 
         </div>
@@ -205,8 +206,9 @@
 
         </div>
         <div class="reviews__comment">
+          <h4> Юля:</h4>
           Спасибо за отличные новинки, очень понравилась пицца "Итальянская Классика" с Пармской ветчиной, Вы одна из немногих компаний, где за не очень дорого можно попробовать настоящие продукты- хороший сыр и дорогую ветчину. Так держать.
-           Всегда ждем Вашу доставку как праздник. Спасибо.
+           Спасибо.
 
         </div>
 
@@ -217,8 +219,9 @@
 
         </div>
         <div class="reviews__comment">
+          <h4> Патрик:</h4>
           Спасибо за отличные новинки, очень понравилась пицца "Итальянская Классика" с Пармской ветчиной, Вы одна из немногих компаний, где за не очень дорого можно попробовать настоящие продукты- хороший сыр и дорогую ветчину. Так держать.
-           Всегда ждем Вашу доставку как праздник. Спасибо.
+           Спасибо.
 
         </div>
 
@@ -228,26 +231,58 @@
     </section>
     <H2 id="111">Контакты</H2>
      <div class="sss"></div>
-     <section class="contacts">
+     <section class="container contacts">
        <div class="contacts__maps">
           <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d37294.9427767772!2d18.63712725!3d54.25205424999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2spl!4v1622746452308!5m2!1sru!2spl"
            width="600"
            height="450"
            style="border:0;"
            allowfullscreen=""
-           loading="lazy"></iframe>
+           loading="lazy"
+           >
+          </iframe>
        </div>
        <div class="contacts__adres">
          <ul>
-           <li>1</li>
-           <li>2</li>
-           <li>3</li>
-           <li>4</li>
-           <li>5</li>
+           <li>
+             <p>Контактный телефон:</p> 
+             <a href="#">+3231235454</a>
+           </li>
+           <li>
+             <p>Основной офис:</p> 
+             <a href="#">Gdansk ul.Wawelska 25/17</a>
+           </li>
+           <li>
+             <p>Служба доставки:</p> 
+             <a href="https://glovoapp.com/">GLovo</a>
+           </li>
+           <li>
+             <p>FAQ</p> 
+           </li>
+           <li>
+             <p>PRIVACY</p> 
+           </li>
          </ul>
 
        </div>
      </section>
+     <Footer class="footer">
+       
+       <div class="footer__rights">
+        <p>© Pizza Hut 2021</p>
+        <p> All rights reserved.</p>
+
+       </div>
+       <div class="footer__networks">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-instagram "></a>
+        <a href="#" class="fa fa-skype"></a>
+
+         
+
+       </div>
+     </Footer>
     
         
   </body>
