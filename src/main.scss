@@ -18,42 +18,48 @@ body {
   display: flex;
   width: 100%;
   height: 100px;
-  background-color: white;
+  justify-content: space-between;
+  text-align: center;
 
 }
 .header {
   width:100%;
   height:100px;
-  z-index: 2;
+  z-index: 50;
   position: fixed;  
- 
+  
   
   &__logo {
-    display: flex;
-    width: 150px;
-    margin-left: 40px;
+    flex:0 0 150px;
     cursor: pointer;
+    overflow: hidden;
+    border-radius: 50%;
+    position: relative;
+    z-index: 3;
     
+  }
+  &__logo img {
+    max-width: 100%;
   }
   &__nav {
     display: flex;
     width: 100%;
-    justify-content: flex-end;
-    margin-right: 50px;
-    
+    justify-content: flex-end;    
     
   }
   &__list {
     display:flex;
-    width:100%;
+    width:60%;
     justify-content: flex-end;
     margin-top: 30px;
-    margin-right: 100px;
+    margin-right: 50px;
+    position: relative;
+    z-index: 2;
     
     
   }
   &__list li {
-    width:120px;
+    flex-basis: 20%;
     height: 45px;
     border:2px solid tomato;
     list-style: none;
@@ -66,10 +72,10 @@ body {
   }
   &__link {
     color:white;
-    font-size: 22px;
+    font-size:20px;
     text-decoration: none;
     position: relative;
-    top:8px
+    top:12px
     
   }
   li:hover {
@@ -81,6 +87,17 @@ body {
 
   }  
 }
+.header:before {
+  content:"";
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height: 100%;
+  background-color:white;
+  z-index: 2;
+}
+
 
 .banner {
   width:100%;
@@ -132,16 +149,16 @@ h1 {
 .button {
   &__order{
   width: 8em;
-  height: 70px;
+  height:60px;
   background-color:tomato;
   border: 2px solid tomato;
   border-radius: 10px;
-  font-size: 30px;
+  font-size: 26px;
   color:white;
+  margin-top: 20px;
   }
   &__order:hover {
     cursor: pointer;
-    text-decoration: none;
     background-color:rgb(216, 79, 25);
     position: relative;
     top:1px;
@@ -288,3 +305,174 @@ h4 {
   color: white;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
+
+.header__burger {
+  display:none;
+  margin-top: 30px;
+
+}
+
+
+@media (max-width:900px) {
+  .header {
+    height: 60px;
+    max-width: 900px;
+  }
+  .header__logo {
+    flex: 0 0 60px;
+  }
+  .header__burger {
+    display:block;
+    position: relative;
+    width:30px;
+    height: 20px;
+    position: relative;
+    z-index: 3;
+    right: 30px;
+    bottom: 10px;
+  }
+  .header__burger:before,
+  .header__burger:after {
+    content: "";
+    background-color:black;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left:0;
+  
+  }
+  .header__burger span {
+    position: absolute;
+    background-color:black;
+    left:0;
+    width:100%;
+    height: 2px;
+    top:9px;
+    transition: all 0.3s ease 0s;
+  }
+  .header__burger:before {
+    top:0;
+    transition: all 0.3s ease 0s;
+  }
+  .header__burger:after {
+    bottom: 0;
+    transition: all 0.3s ease 0s;
+  }
+
+  .header__burger.active:before {
+    transform: rotate(45deg);
+    top:9px;
+    transition: all 0.3s ease 0s;
+
+  }
+  .header__burger.active:after {
+    transform: rotate(-45deg);
+    bottom: 9px;
+
+  }
+
+  .header__burger.active span {
+   transform: scale(0);
+
+  }
+  .header__nav {
+    position: fixed;
+    top:-100%;
+    left:0;
+    width:100%;
+    height: 100%;
+    background-color:tomato;
+    padding: 60px 0 0 0 ; 
+
+  }
+  .header__nav.active{
+    top:0;
+    transition: all 0.3s ease 0s;
+  }
+  .header__list {
+    display:block;
+    width:20%;
+    margin: 0;
+  }
+}
+@media (max-width:540px) {
+  .header {
+    height: 60px;
+    max-width: 540px;
+  }
+  .header__logo {
+    flex: 0 0 60px;
+  }
+  .header__burger {
+    display:block;
+    position: relative;
+    width:30px;
+    height: 20px;
+    position: relative;
+    z-index: 3;
+    right: 30px;
+    bottom: 10px;
+  }
+  .header__burger:before,
+  .header__burger:after {
+    content: "";
+    background-color:black;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left:0;
+  
+  }
+  .header__burger span {
+    position: absolute;
+    background-color:black;
+    left:0;
+    width:100%;
+    height: 2px;
+    top:9px;
+    transition: all 0.3s ease 0s;
+  }
+  .header__burger:before {
+    top:0;
+    transition: all 0.3s ease 0s;
+  }
+  .header__burger:after {
+    bottom: 0;
+    transition: all 0.3s ease 0s;
+  }
+
+  .header__burger.active:before {
+    transform: rotate(45deg);
+    top:9px;
+    transition: all 0.3s ease 0s;
+
+  }
+  .header__burger.active:after {
+    transform: rotate(-45deg);
+    bottom: 9px;
+
+  }
+
+  .header__burger.active span {
+   transform: scale(0);
+
+  }
+  .header__nav {
+    position: fixed;
+    top:-100%;
+    left:0;
+    max-width: 540px;
+    height: 100%;
+    background-color:tomato;
+    padding: 60px 0 0 0 ; 
+
+  }
+  .header__nav.active{
+    top:0;
+    transition: all 0.3s ease 0s;
+  }
+  .header__list {
+    display:block;
+    width:20%;
+    margin: 0;
+  }}
