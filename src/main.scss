@@ -313,6 +313,9 @@ h4 {
 }
 
 
+
+
+
 @media (max-width:900px) {
   .header {
     height: 60px;
@@ -394,85 +397,229 @@ h4 {
     width:20%;
     margin: 0;
   }
-}
-@media (max-width:540px) {
-  .header {
-    height: 60px;
-    max-width: 540px;
+  .contacts__maps {    
+      display:none;
+    
   }
-  .header__logo {
-    flex: 0 0 60px;
-  }
-  .header__burger {
-    display:block;
-    position: relative;
-    width:30px;
-    height: 20px;
-    position: relative;
-    z-index: 3;
-    right: 30px;
-    bottom: 10px;
-  }
-  .header__burger:before,
-  .header__burger:after {
-    content: "";
-    background-color:black;
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    left:0;
-  
-  }
-  .header__burger span {
-    position: absolute;
-    background-color:black;
-    left:0;
+  .contacts__adres {
     width:100%;
-    height: 2px;
-    top:9px;
-    transition: all 0.3s ease 0s;
+    text-align: center;
   }
-  .header__burger:before {
-    top:0;
-    transition: all 0.3s ease 0s;
-  }
-  .header__burger:after {
-    bottom: 0;
-    transition: all 0.3s ease 0s;
-  }
-
-  .header__burger.active:before {
-    transform: rotate(45deg);
-    top:9px;
-    transition: all 0.3s ease 0s;
-
-  }
-  .header__burger.active:after {
-    transform: rotate(-45deg);
-    bottom: 9px;
-
-  }
-
-  .header__burger.active span {
-   transform: scale(0);
-
+  .header {
+    max-width: 900px;
+    height: 50px;
+    background-color:white;
   }
   .header__nav {
-    position: fixed;
-    top:-100%;
-    left:0;
-    max-width: 540px;
-    height: 100%;
-    background-color:tomato;
-    padding: 60px 0 0 0 ; 
+    max-width: 100%;
+    height: 300px;
+  }
+  .header__nav li {
+    width:100%;
+    border: none;
+  }
+  .header__nav.active {
+    max-width: 100%;
+  }
+
+  .banner__mein p {
+    font-size: 16px;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  .button__order {
+    width:200px;
+    height: 60px;
+    font-size: 18px;
+    margin-bottom: 40px;
+    
 
   }
-  .header__nav.active{
-    top:0;
-    transition: all 0.3s ease 0s;
+  h2 {
+    margin-top: 30px;
+    font-size:33px;
   }
-  .header__list {
-    display:block;
+  .title__text{
+    display: none;
+  }
+  .sss {    
+    width:30%;
+  }
+  .splide {
+    height: 15em;
+    
+    &__list {
+      height: 15em;
+    }
+    p {
+      font-size: 34px;
+    }
+  }
+  .menu {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    &__menu-card {
+      display: flex;
+      width: 45%;
+      flex-direction: column;
+      margin:0 auto;
+    
+         
+    }
+    &__textm {
+      color:tomato;
+      text-align: center;
+      margin-bottom: 0;
+      font-size: 1.2em;
+      margin-top: 0;
+    }
+    &__texty {
+      color:black;
+      text-align: center;
+      height: 3em;
+      font-style: italic;
+      
+      
+    }
+    &__popo {
+      height: 200px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      transition: 1s;
+      }
+      
+    }
+    .reviews {
+      display:block;
+      &__blog {
+        width:90%;
+        margin-bottom: 20px;
+      }
+    }
+  
+  }
+
+
+
+
+
+
+
+@media (max-width:500px) {
+  .header {
+    max-width: 500px;
+    height: 50px;
+    background-color:white;
+  }
+  .header__nav {
+    max-width: 500px;
+    height: 300px;
+  }
+  .header__nav li {
+    width:100%;
+    border: none;
+  }
+  .header__nav.active {
+    max-width: 500px;
+  }
+
+  .banner__mein p {
+    font-size: 14px;
+  }
+  h1 {
+    font-size: 16px;
+  }
+  .button__order {
+    width:100px;
+    height: 40px;
+    font-size: 14px;
+    margin-bottom: 20px;
+    
+
+  }
+  h2 {
+    margin-top: 30px;
+    font-size: 18px;
+  }
+  .title__text{
+    display: none;
+  }
+  .sss {    
     width:20%;
-    margin: 0;
-  }}
+  }
+  .splide {
+    height: 15em;
+    
+    &__list {
+      height: 15em;
+    }
+    p {
+      font-size: 34px;
+    }
+  }
+  .menu {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    &__menu-card {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      margin:0 auto;
+    
+         
+    }
+    &__textm {
+      color:tomato;
+      text-align: center;
+      margin-bottom: 0;
+      font-size: 1.2em;
+      margin-top: 0;
+    }
+    &__texty {
+      color:black;
+      text-align: center;
+      height: 3em;
+      font-style: italic;
+      
+      
+    }
+    &__popo {      
+      height: 200px;      
+      margin-top: 10px;
+      margin-bottom: 10px;
+      width:90%;
+      margin: 0 auto;
+      
+    }
+    &__buttom {
+      margin: 0 auto;
+      width: 100px;
+      color:white;
+      font-size: 15px;
+      margin-bottom: 30px;
+     
+    }
+   
+  }
+  .reviews {
+    display:block;
+    &__blog{
+      width:90%;
+      margin-top: 10px;
+    }
+  }
+  .contacts {
+    display:block;
+    &__maps {
+      display:none;
+    }
+  }
+}
+
+
+
