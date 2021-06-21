@@ -1,5 +1,9 @@
 @import "./partials/menu-card/menu-card.scss";
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -86,6 +90,9 @@ body {
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 
   }  
+  a {
+    padding: 10px 15px;
+  }
 }
 .header:before {
   content:"";
@@ -404,6 +411,8 @@ h4 {
   .contacts__adres {
     width:100%;
     text-align: center;
+     margin: 0 auto;
+    
   }
   .header {
     max-width: 900px;
@@ -489,6 +498,9 @@ h4 {
       margin-top: 10px;
       margin-bottom: 10px;
       transition: 1s;
+      }
+      &__cena {
+        margin-top: 60px;
       }
       
     }
@@ -617,6 +629,9 @@ h4 {
     display:block;
     &__maps {
       display:none;
+    }
+    &__adres {
+      margin: 0 auto;
     }
   }
 }
